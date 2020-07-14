@@ -1,0 +1,22 @@
+<html>
+<head>
+<h1> JS Ques First (Day2) </h1>
+</head>
+<body>
+<script>
+	var myDate=new Date();
+	var myDay=myDate.getDay();
+	var days=['Suday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+	document.write("TODAY IS: "+days[myDay]);
+	document.write("<br>");
+	var hours=myDate.getHours();
+	var ap=hours>=12?'PM':'AM'
+	hours=hours%12;
+	hours=hours?hours:12;
+	var min=myDate.getMinutes();
+	min=min<10?'0'+min:min;
+	var myTime=hours+""+ap+":"+min+":"+myDate.getMilliseconds();
+	document.write("\tCURRENT TIME: "+myTime);
+</script>
+</body>
+</html>
